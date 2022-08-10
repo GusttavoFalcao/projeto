@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="src/View/css/style.css" />
+  <link rel="icon" type="imagens/png" href="src/icone.png" />
+</head>
+
+<body>
+  <main class="flex items-center justify-center w-screen h-screen">
+    <section class="flex items-center justify-center w-2/4 border-2 border-blue-900 h-60">
+      <form action="src/Controller/User.php?operation=login" method="POST">
+        <input type="text" name="login" id="login" placeholder="Digite seu usuário" class="border-2 border-blue-900"/>
+        <input type="password" name="password" id="password" placeholder="Digite sua senha" class="border-2 border-blue-900" />
+        <article class="text-center mt-10">
+        <button type="submit" class="p-4 text-white bg-blue-900 rounded" >
+          Logar
+        </button>
+      </article>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
